@@ -7,6 +7,12 @@ terraform {
       version = "4.33.0"
     }
   }
+backend "azurerm"{
+resoure_group_name = "new_rg"
+Storage_account_name = "mynewstorgaesuman"
+container_name = "stgcontainer"
+Key = "bhawani.tfstate"
+
 }
 
 provider "azurerm" {
